@@ -1,0 +1,14 @@
+body {
+    background-color: #d6f6f6;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: #943819;
+    line-height: 1.5;
+    text-align: justify;
+
+    & h1, h2 {
+        font-size: 14px;
+    }
+}
+
+/* El font-size no se hereda, hay que hacerlo individualmente o por clases*, o con &, o fuera con comas/

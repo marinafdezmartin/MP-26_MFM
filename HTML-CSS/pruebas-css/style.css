@@ -1,0 +1,33 @@
+
+/* Aqui programamos en CSS */
+/* mirar el Selector Specificity (raton encima del elemento) - tres numeros 1,0,0 Prevalece el mas alto */
+p {
+    background-color: #e0f9f9;
+}
+
+/* para los id, se llaman con # */
+#parrafo2 {
+    background-color: #7acbcbb3;
+    color: #8c04b2;
+}
+
+div {
+    /* pilla la division porque tiene prioridad el bg establecido al principio */
+    background-color: #8c04b2; 
+
+    /* ahora vamos a especificar el parrafo del div - & */
+    & p {
+        background-color: #e4a5f6;
+    }
+}
+
+/* hover (con clases) */
+.parrafohover:hover {
+    background-color: #f5ef97
+}
+
+body {
+    background-color: #ffeefd;     
+}
+
+/* Unidades relativas y absolutas (px) (% en relacion al elemento anterior) */

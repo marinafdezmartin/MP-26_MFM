@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+
+    & .menu-superior {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: black;
+        gap: 100px;
+        text-align: center;
+
+        & div {
+            color: #ffffff;
+            padding: 5px;
+            border-bottom-style: solid;
+            border-color: transparent;
+            transition: 0.5s;
+            width: 100%;
+            text-align: center;
+        }
+
+        & div:hover {
+            color: #fadd5d;
+            border-bottom-style: solid;
+            border-color: #fadd5d;
+        }
+    }
+}
