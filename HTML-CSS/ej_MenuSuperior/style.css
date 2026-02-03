@@ -5,10 +5,10 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        text-align: center;
         background-color: black;
         gap: 100px;
-        text-align: center;
-
+        
         & div {
             color: #ffffff;
             padding: 5px;

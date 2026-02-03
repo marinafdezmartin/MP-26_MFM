@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+
+    & .menu-lateral {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        width: 50%;
+        background-color: rgb(45, 44, 103);
+
+        & div {
+            color: rgb(240, 239, 239);
+            text-align:left;
+            text-decoration: none;
+            font-size: large;
+            padding: 15px;
+            border-bottom-style: solid;
+            border-color: transparent;
+            transition: 0.5s;
+            margin: 20px;
+            width: 65%;
+
+        }
+
+        & div:hover {
+            background-color: rgb(10, 10, 74);
+            width: 65%;
+
+        }
+    }
+
+    & .contenido-web {
+        padding: 20px;
+        color: rgb(27, 27, 63);
+        text-align: justify;
+    }
+
+}
