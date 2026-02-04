@@ -1,0 +1,108 @@
+body {
+    justify-content: center;
+    align-items: center;
+
+    & .contenedor-principal {
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        margin: 20px;
+        border: 20px;
+        padding: 20px;
+
+        box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(50, 50, 50, 0.75);
+
+        & .contenedor-superior {
+            display: flex;
+            flex-direction: row;
+            gap: 5%;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+
+            & .imagen {
+                & img {
+                    border-style: solid;
+                    border-radius: 1px;
+                    border-radius: 12px;
+                    border-color: rgb(225, 225, 225);
+                }
+            }
+
+            & .usuario {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 100;
+                letter-spacing: 1px;
+                width: 100%;
+
+                & #username {
+                    color: rgb(131, 131, 131);
+                    font-size: 12px;
+                }
+            }
+
+            & .boton {
+                justify-content: center;
+                align-items: flex-end;
+
+                & button {
+                    background-color: transparent;
+                    border-style: none;
+                }
+
+                & button:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        & .contenedor-parrafo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: baseline;
+
+            & p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                text-align: justify;
+            }
+
+            & #hora-fecha {
+                font-size: 12px;
+                color: rgb(116, 116, 116);
+            }
+        }
+
+        & .contenedor-respuesta {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        & .contenedor-interaccion {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        & .contenedor-interaccion:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@media all and (max-width:600px) {
+    .contenedor-principal {
+        background-color: brown;
+    }
+}
