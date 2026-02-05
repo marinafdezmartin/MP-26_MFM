@@ -7,3 +7,5 @@ console.log(hobbies[1])
 
 hobbies.push('series')
 console.log(hobbies)
+
+console.log(hobbies.length)

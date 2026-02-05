@@ -6,62 +6,29 @@ body {
 
     & .contenido-web {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
-        & .columna {
+        /* MENU SUPERIOR */
+        & .menu-superior {
             display: flex;
-            flex-direction: column;
-            justify-content:space-between;
-            padding: 20px;
-            border-style: solid;
-            border-radius: 12px;
+            flex-direction: row;
+        }
 
+        /* GENERAL */
+        & .general {
+            display: flex;
+            flex-direction: row;
 
-            & .nombre {
+            & .columna {
                 display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-                font-size: 10px;
-                text-align: right;
-            }
-
-            & .imagen-perfil {
-                justify-content: center;
-                align-items: center;
+                flex-direction: column;
+                border-style: solid;
                 
-                & #perfil {
-                }
             }
 
-            & .descripcion-columna {
+            & .contenido {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items:normal ;
-            }
-
-            & .fecha-lugar {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items:normal ;
-            }
-
-            & .botones {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
-            }
-
-            & .contacta-conmigo {
-                justify-content: space-around;
-                align-items: center;
-
-                & button {
-                    align-items: center;
-                }
             }
         }
     }
