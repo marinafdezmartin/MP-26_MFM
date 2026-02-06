@@ -12,66 +12,83 @@
     <!-- CONTENIDO-WEB -->
     <div class="contenido-web">
 
-        <!-- MENU SUPERIOR -->
-        <div class="menu-superior">
-                <button>Inicio</button>
-                <button>Educación</button>
-                <button>Experiencia</button>
-                <button>Software</button>
-                <button>Contacto</button>
-                <button id="boton-hablemos">Hablemos</button>
+        <!-- COLUMNA -->
+        <div class="columna">
+            <div class="nombre">
+                <img width="30px" height="30px" src="../cv_pro/imagenes/moderno.png" alt="">
+                <h1>Marina Fernández</h1>
+            </div>
+            <div class="imagen-perfil">
+                <img id="perfil" width="200px"
+                    src="./imagenes/IMG_6459.jpg"
+                    alt="Imagen de perfil">
+            </div>
+            <div class="descripcion-columna">
+                <p>Ambientóloga</p>
+                <p>GIS</p>
+                <p>Desarrolladora GIS</p>
+            </div>
+
+            <div class="fecha-lugar">
+                <p>01/03/1999</p>
+                <p>Madrid, España</p>
+            </div>
+            <div class="botones">
+                <button id="mail">
+                    <img src="./imagenes/icons8-correo-24.png" alt="">
+                    <a href="mailto: marinafdez.martin@gmail.com"></a>
+                </button>
+                <button id="telefono">
+                    <img width="24px" src="./imagenes/icons8-teléfono-50.png" alt="">
+                    <a href="tel: +34626388060"></a>
+                </button>
+                <button id="linkedin">
+                    <img width="24px" src="./imagenes/icons8-linkedin-50.png" alt="">
+                    <a href="www.linkedin.com/in/marina-fernández-martín"></a>
+                </button>
+            </div>
+            <div class="descarga-cv">
+                <button>Descargar CV</button>
+            </div>
         </div>
 
         <!-- GENERAL -->
         <div class="general">
 
-            <!-- COLUMNA -->
-            <div class="columna">
-                <div class="nombre">
-                    <img width="30px" height="30px" src="../cv_pro/imagenes/moderno.png" alt="">
-                    <h1>Marina Fernández Martín</h1>
-                </div>
-                <div class="imagen-perfil">
-                    <img id="perfil" width="200px" src="https://images.milenio.com/-ay-HIS8BTAo9x_LSan-BhcSf_U=/375x0/uploads/media/2025/09/23/segundos-puedes-foto-profesional-parea.png" alt="Imagen de perfil">
-                </div>
-                <div class="descripcion-columna">
-                    <p>Ambientóloga</p>
-                    <p>GIS</p>
-                    <p>Desarrolladora GIS</p>
-                </div>
-
-                <div class="fecha-lugar">
-                    <p>01/03/1999</p>
-                    <p>Madrid, España</p>
-                </div>
-                <div class="botones">
-                    <button id="mail">
-                        <a href="mailto: marinafdez.martin@gmail.com"></a>
-                    </button>
-                    <button id="telefono">
-                        <a href="tel: +34626388060"></a>
-                    </button>
-                    <button id="linkedin">
-                        <a href="www.linkedin.com/in/marina-fernández-martín"></a>
-                    </button>
-                </div>
-                <div class="contacta-conmigo">
-                    <button>Contacta conmigo</button>
-                </div>
+            <!-- MENU SUPERIOR -->
+            <div class="menu-superior">
+                <button class="nav-btn" onclick="location.href='#inicio'" >Inicio</button>
+                <button class="nav-btn" onclick="location.href='#educacion'" >Educación</button>
+                <button class="nav-btn" onclick="location.href='#experiencia'" >Experiencia</button>
+                <button class="nav-btn" onclick="location.href='#software'" >Software</button>
+                <button class="nav-btn" onclick="location.href='#contacto'" >Contacto</button>
+                <!-- <button id="boton-hablemos">Hablemos</button> -->
             </div>
 
             <!-- CONTENIDO -->
             <div class="contenido">
-                
-                <div class="presentacion"></div>
-                <div class="educacion"></div>
-                <div class="experiencia"></div>
-                <div class="software"></div>
-                <div class="contacto"></div>
+
+                <div id="Inicio" class="section" >
+                    <div class="section-header">
+                        <div class="section-title" ></div>
+                    </div>
+                    <div class="section-body" >
+                        <p></p>
+                    </div>
+                </div>
+
+                <div id="Educación" class="section" ></div>
+
+                <div id="Experiencia" class="section" ></div>
+
+                <div id="Software" class="section" ></div>
+
+                <div id="Contacto" class="section" ></div>
+
             </div>
 
         </div>
-        
+
     </div>
 
 </body>

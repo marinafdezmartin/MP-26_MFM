@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Tu Nombre</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- MENÚ SUPERIOR FIJO -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <div class="logo">CV</div>
+      </div>
+
+      <div class="topbar-right">
+        <button class="nav-btn" onclick="location.href='#inicio'">Inicio</button>
+        <button class="nav-btn" onclick="location.href='#educacion'">Educación</button>
+        <button class="nav-btn" onclick="location.href='#experiencia'">Experiencia</button>
+        <button class="nav-btn" onclick="location.href='#software'">Software</button>
+        <button class="nav-btn" onclick="location.href='#contacto'">Contacto</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LAYOUT GENERAL -->
+  <div class="layout">
+
+    <!-- COLUMNA IZQUIERDA FIJA -->
+    <div class="sidebar">
+      <div class="profile">
+        <img class="avatar" src="tu-foto.jpg" alt="Foto de perfil" />
+        <div class="profile-text">
+          <div class="name">Tu Nombre</div>
+          <div class="role">Tu rol / especialidad</div>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="info-line">Ciudad, País</div>
+        <div class="info-line">email@correo.com</div>
+        <div class="info-line">+34 600 000 000</div>
+        <div class="info-line">LinkedIn / Portfolio</div>
+      </div>
+
+      <div class="cta">
+        <button class="side-btn">Descargar CV</button>
+        <button class="side-btn">Contactar</button>
+      </div>
+    </div>
+
+    <!-- CONTENIDO DERECHA -->
+    <div class="content">
+
+      <div id="inicio" class="section">
+        <div class="section-header">
+          <div class="section-title">Inicio</div>
+        </div>
+        <div class="section-body">
+          <p>
+            Aquí va tu introducción breve: quién eres, qué estás buscando y qué te diferencia.
+          </p>
+        </div>
+      </div>
+
+      <div id="educacion" class="section">
+        <div class="section-header">
+          <div class="section-title">Educación</div>
+        </div>
+        <div class="section-body">
+
+          <div class="row-item">
+            <div class="row-left">
+              <div class="row-title">Máster / Grado</div>
+              <div class="row-subtitle">Centro · Detalle 1 · Detalle 2</div>
+            </div>
+            <div class="row-right">2024 - 2026</div>
+          </div>
+
+          <div class="row-item">
+            <div class="row-left">
+              <div class="row-title">Otra formación</div>
+              <div class="row-subtitle">Centro · Detalle 1 · Detalle 2</div>
+            </div>
+            <div class="row-right">2022 - 2024</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="experiencia" class="section">
+        <div class="section-header">
+          <div class="section-title">Experiencia</div>
+        </div>
+        <div class="section-body">
+
+          <div class="row-item">
+            <div class="row-left">
+              <div class="row-title">Puesto - Empresa</div>
+              <div class="row-subtitle">Tarea 1 · Tarea 2 · Tarea 3</div>
+            </div>
+            <div class="row-right">2023 - Actual</div>
+          </div>
+
+          <div class="row-item">
+            <div class="row-left">
+              <div class="row-title">Puesto - Empresa</div>
+              <div class="row-subtitle">Tarea 1 · Tarea 2 · Tarea 3</div>
+            </div>
+            <div class="row-right">2021 - 2023</div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="software" class="section">
+        <div class="section-header">
+          <div class="section-title">Software</div>
+        </div>
+        <div class="section-body">
+
+          <div class="skill">
+            <div class="skill-top">
+              <div class="skill-name">ArcGIS Pro</div>
+              <div class="skill-level">Intermedio</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill w75"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top">
+              <div class="skill-name">ArcGIS Online</div>
+              <div class="skill-level">Intermedio</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill w65"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top">
+              <div class="skill-name">HTML / CSS</div>
+              <div class="skill-level">Principiante</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill w40"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="contacto" class="section">
+        <div class="section-header">
+          <div class="section-title">Contacto</div>
+        </div>
+        <div class="section-body">
+          <div class="contact-box">
+            <div class="contact-line">Email: email@correo.com</div>
+            <div class="contact-line">Teléfono: +34 600 000 000</div>
+            <div class="contact-line">LinkedIn: tu-link</div>
+            <div class="contact-line">Portfolio: tu-link</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
