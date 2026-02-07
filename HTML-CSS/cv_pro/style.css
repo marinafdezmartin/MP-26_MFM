@@ -13,19 +13,23 @@
     src: url('./fonts/Pally-Variable.ttf') format('truetype') ;
 }
 
+
+
 body {
     background: #DAD7CD;
     background: linear-gradient(90deg, rgba(218, 215, 205, 1) 0%, rgba(163, 177, 138, 1) 20%, rgba(88, 129, 87, 1) 40%, rgba(58, 90, 64, 1) 60%, rgba(52, 78, 65, 1) 80%);
     scroll-behavior: smooth;
+    height: 100vh;
+    width: max-content;
 
     & .contenido-web {
         display: flex;
         flex-direction: row;
         justify-content:baseline;
         align-items:flex-start;
-        height: 100vh;
+        
         margin: 0px;
-        padding: 20px;
+        /* padding: 10px; */
         
 
 
@@ -196,6 +200,12 @@ body {
         & .general {
             display: flex;
             flex-direction: column;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            left: 400px;
+            
+
 
             /* MENU SUPERIOR */
             & .menu-superior {
@@ -257,25 +267,33 @@ body {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 100%;
                 position: relative;
                 left: 400px;
+                width: 100%;
+                height: 100%;
              
                 & .section {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    
+                    position: relative;
+                    height: 100vh;
+                    width: 100%;
+
                     font-family: satoshi;
                     font-weight: 400;
                     color: #cfcfcf;
-                    scroll-snap-align: start;
                     
-
                 }
 
                 & #Inicio {
-                    min-height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 40px;
                     & h1 {
                         font-family: clashdisplay;
                         letter-spacing: 5px;
@@ -292,8 +310,31 @@ body {
                 }
 
                 & #Educacion {
-                    min-height: 100vh;
+                    display: flex;
+                    flex-direction: row;
                 }
+
+                & .section {
+                    & .contenedor-carrusel {
+                        display: flex;
+                        flex-direction: row;
+                        position: relative;
+                        width: 100%;
+                        & .carrusel {
+                            
+                            /* From https://css.glass */
+                            background: rgba(255, 255, 255, 0.14);
+                            border-radius: 16px;
+                            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                            backdrop-filter: blur(1px);
+                            -webkit-backdrop-filter: blur(1px);
+                            border: 1px solid rgba(255, 255, 255, 0.3);
+                        }
+                    }
+
+                }
+
+
 
                 & #Experiencia {
                     min-height: 100vh;
