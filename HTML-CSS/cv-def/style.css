@@ -10,25 +10,27 @@
 
 @font-face {
     font-family: 'pally';
-    src: url('./fonts/Pally-Variable.ttf') format('truetype') ;
+    src: url('./fonts/Pally-Variable.ttf') format('truetype');
 }
 
-*{ box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 /* Para que el menu superior redirija a cada id */
 body:has(#inicio:target) .menu a[href="#inicio"],
 body:has(#educacion:target) .menu a[href="#educacion"],
 body:has(#experiencia:target) .menu a[href="#experiencia"],
 body:has(#software:target) .menu a[href="#software"],
-body:has(#contacto:target) .menu a[href="#contacto"]{
-  color: white;
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.6px);
-  -webkit-backdrop-filter: blur(5.6px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+body:has(#contacto:target) .menu a[href="#contacto"] {
+    color: white;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* Para que cuando scrolleo se señalice en el menu superior */
@@ -36,16 +38,17 @@ body:has(#contacto:target) .menu a[href="#contacto"]{
 
 
 
-& body{
-  margin: 0;
-  height: 100vh;
-  overflow: hidden; /* el body NO scrollea */
-  font-family: satoshi;
-  background: #DAD7CD;
-  background: linear-gradient(90deg, rgba(218, 215, 205, 1) 0%, rgba(163, 177, 138, 1) 20%, rgba(88, 129, 87, 1) 40%, rgba(58, 90, 64, 1) 60%, rgba(52, 78, 65, 1) 80%);
+& body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    /* el body NO scrollea */
+    font-family: satoshi;
+    background: #DAD7CD;
+    background: linear-gradient(90deg, rgba(218, 215, 205, 1) 0%, rgba(163, 177, 138, 1) 20%, rgba(88, 129, 87, 1) 40%, rgba(58, 90, 64, 1) 60%, rgba(52, 78, 65, 1) 80%);
 
-  
-    & .topbar{
+
+    & .topbar {
         position: fixed;
         top: 0;
         left: 0;
@@ -65,19 +68,19 @@ body:has(#contacto:target) .menu a[href="#contacto"]{
             align-items: center;
             justify-content: center;
 
-            & a{
-                color: rgba(255,255,255,0.75);
+            & a {
+                color: rgba(255, 255, 255, 0.75);
                 text-decoration: none;
                 padding: 8px 14px;
                 border-radius: 16px;
-                border: 1px; 
-                border-style: solid; 
+                border: 1px;
+                border-style: solid;
                 border-color: rgba(255, 255, 255, 0.06);
                 transition: background 0.25s, color 0.25s, border-color 0.25s;
             }
-        } 
+        }
 
-        & .menu a:hover{
+        & .menu a:hover {
             color: white;
 
             /* From https://css.glass */
@@ -89,17 +92,17 @@ body:has(#contacto:target) .menu a[href="#contacto"]{
             border: 1px solid rgba(255, 255, 255, 0.06);
         }
 
-        
+
     }
 
     & .layout {
-        .sidebar{
+        .sidebar {
             position: fixed;
             top: 64px;
             left: 35px;
             width: 280px;
             height: calc(100vh - 64px);
-            
+
             background: rgba(255, 255, 255, 0.14);
             border-radius: 16px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -151,8 +154,10 @@ body:has(#contacto:target) .menu a[href="#contacto"]{
                     gap: 2px;
                     padding-left: 10px;
 
-                    & p{
+                    & p {
                         margin: 0;
+                        color: #22322a;
+                        font-weight: 500;
                     }
                 }
 
@@ -162,8 +167,9 @@ body:has(#contacto:target) .menu a[href="#contacto"]{
                     gap: 2px;
                     padding-left: 10px;
 
-                    & p{
+                    & p {
                         margin: 0;
+                        color: #22322a;
                     }
                 }
 
@@ -172,7 +178,7 @@ body:has(#contacto:target) .menu a[href="#contacto"]{
                     flex-direction: row;
                     justify-content: space-around;
                     align-items: center;
-                    
+
                     & a {
 
                         display: flex;
@@ -247,20 +253,22 @@ body:has(#contacto:target) .menu a[href="#contacto"]{
             }
         }
 
-        & .main{
+        & .main {
             position: fixed;
             top: 64px;
             left: 320px;
             right: 0;
             height: calc(100vh - 64px);
-            overflow-y: auto; /* scrollea main */
+            overflow-y: auto;
+            /* scrollea main */
             scroll-snap-type: y mandatory;
             scroll-behavior: smooth;
+            scrollbar-color: #839e78 #344e41;
 
             background: none;
 
 
-            & .section{
+            & .section {
                 scroll-snap-align: start;
                 scroll-snap-stop: always;
                 scroll-margin-top: 0px;
@@ -273,7 +281,190 @@ body:has(#contacto:target) .menu a[href="#contacto"]{
                 padding: 30px;
             }
 
+            & #inicio {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+
+                & p,
+                h1,
+                h2 {
+                    padding-left: 100px;
+                    text-align: left;
+                    letter-spacing: 4px;
+                }
+
+                & h1 {
+                    font-family: clashdisplay;
+                    font-size: 60px;
+                    /* From https://css.glass */
+                    color: rgba(255, 255, 255, 0.36);
+                    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.251);
+                    backdrop-filter: blur(3.4px);
+                    -webkit-backdrop-filter: blur(3.4px);
+                }
+
+                & p {
+                    font-family: pally;
+                    font-size: 20px;
+                    color: #22322a;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+
+                & h2 {
+                    font-weight: 500;
+                    margin-top: 0;
+                    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.522);
+                    color: #dad7cd9e;
+                }
+            }
+
+            & #educacion {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                gap: 5px;
+
+                & .contenido-educacion {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 90%;
+                    height: fit-content;
+                    border: 1px;
+                    border-style: solid;
+                    padding: 10px;
+                    padding-left: 30px;
+                    padding-right: 50px;
+
+                    /* From https://css.glass */
+                    background: rgba(255, 255, 255, 0.13);
+                    border-radius: 16px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(1.9px);
+                    -webkit-backdrop-filter: blur(1.9px);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+                    & .contenido-educacion-ppal {
+                        flex: 1;
+                        padding-left: 30px;
+
+
+                        & h2,
+                        h3 {
+                            margin: 0;
+                            color: #DAD7CD;
+                        }
+
+                        & h2 {
+                            font-weight: 500;
+                            letter-spacing: 2px;
+                            font-size: 20px;
+                            text-shadow: 0 4px 30px rgba(0, 0, 0, 0.522);
+                            color: #dad7cdda;
+                        }
+
+                        & h3 {
+                            font-weight: 400;
+                            letter-spacing: 1px;
+                            font-size: 18px;
+                        }
+
+                    }
+
+                    & .duracion {
+                        margin: 0;
+                        width: max-content;
+
+                        & p {
+                            margin: 0;
+                            color: #DAD7CD;
+                            letter-spacing: 1px;
+                            padding: 8px 14px;
+                            border-radius: 16px;
+                            border: 1px;
+                            border-style: solid;
+                            border-color: rgba(255, 255, 255, 0.319);
+                            transition: background 0.25s, color 0.25s, border-color 0.25s;
+                        }
+
+                    }
+
+                }
+
+            }
+
+            & #experiencia {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: stretch;
+                gap: 10px;
+
+                & .contenido-experiencia {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    justify-content: center;
+                    align-items: flex-start;
+                    min-width: none;
+                    border: 1px;
+                    border-style: solid;
+                    padding: 20px;
+                    color: #DAD7CD;
+
+                    /* From https://css.glass */
+                    background: rgba(255, 255, 255, 0.13);
+                    border-radius: 16px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(1.9px);
+                    -webkit-backdrop-filter: blur(1.9px);
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+                    & h2,
+                    h3 {
+                        text-align: center;
+                        width: 100%;
+                        margin: 0;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        text-shadow: 0 4px 30px rgba(0, 0, 0, 0.522);
+                        color: #dad7cdda;
+                    }
+
+                    & h2 {
+                        font-size: 26px;
+                        letter-spacing: 2px;
+
+                    }
+
+                    & h3 {
+                        margin-bottom: 50px;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+
+                    & p {
+                        width: 100%;
+                        margin: 0;
+                        padding-top: 2px;
+                        padding-bottom: 2px;
+                        padding-left: 20px;
+                        text-shadow: 0 4px 30px rgba(0, 0, 0, 0.522);
+                    }
+
+                    & ul {
+                        text-align: justify;
+                    }
+                }
+            }
+
         }
     }
-
 }
