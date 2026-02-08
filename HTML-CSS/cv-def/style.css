@@ -64,9 +64,10 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
 
         & .menu {
             display: flex;
-            gap: 50px;
+            gap: 70px;
             align-items: center;
             justify-content: center;
+            padding-left: 50px;
 
             & a {
                 color: rgba(255, 255, 255, 0.75);
@@ -131,6 +132,8 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
                     font-family: clashdisplay;
                     font-size: 24px;
                     height: min-content;
+                    color: #22322acc;
+                    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.251);
 
                     & h2 {
                         margin: 0;
@@ -308,7 +311,7 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
                 & p {
                     font-family: pally;
                     font-size: 20px;
-                    color: #22322a;
+                    color: #22322ad4;
                     font-weight: 600;
                     margin-bottom: 0;
                 }
@@ -426,7 +429,6 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
                     -webkit-backdrop-filter: blur(1.9px);
                     border: 1px solid rgba(255, 255, 255, 0.3);
 
-
                     & h2,
                     h3 {
                         text-align: center;
@@ -441,7 +443,6 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
                     & h2 {
                         font-size: 26px;
                         letter-spacing: 2px;
-
                     }
 
                     & h3 {
@@ -463,6 +464,119 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
                         text-align: justify;
                     }
                 }
+            }
+
+            & #software {
+
+                & .stack-carrusel {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    overflow: visible;
+                    position: relative;
+                    width: 100%;
+                    max-width: 900px;
+                    margin: 0 auto;
+
+                    & .boton-izquierda {
+                        position: absolute;
+                        top: 50%;
+                        left: 12px;
+                        transform: translateY(-50%);
+
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        /* From https://css.glass */
+                        background: rgba(255, 255, 255, 0.08);
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                        backdrop-filter: blur(3px);
+                        -webkit-backdrop-filter: blur(3px);
+                        border: 1px solid rgba(255, 255, 255, 0.06);
+                        text-decoration: none;
+                        z-index: 10;
+                    }
+
+                    & .viewport {
+                        overflow: hidden;
+                        padding: 100px;
+
+                        & .track {
+                            display: flex;
+                            flex-direction: row;
+                            flex: 1;
+                            /* scroll horizontal */
+                            overflow-x: auto;
+                            scroll-snap-type: x mandatory;
+                            scroll-behavior: smooth;
+                            /* esconder barra de scroll */
+                            scrollbar-width: none;
+                            gap: 20px;
+
+
+                            & .card {
+                                /* No crecer */
+                                flex-grow: 0;
+                                /* No encoger */
+                                flex-shrink: 0;
+                                /* Tamaño base - 100% ancho del carrusel - solo 1 tarjeta a la vez*/
+                                flex-basis: 100%;
+                                /* Cuando pare el scroll, alinear la con la tarjeta al borde izquierdo (start) */
+                                scroll-snap-align: start;
+
+                                padding: 20px;
+                                padding-left: 50px;
+
+                                /* From https://css.glass */
+                                background: rgba(255, 255, 255, 0.08);
+                                border-radius: 16px;
+                                backdrop-filter: blur(3px);
+                                -webkit-backdrop-filter: blur(3px);
+                                border: 1px solid rgba(255, 255, 255, 0.06);
+                                text-decoration: none;
+
+                                color: #dad7cdca;
+                                text-shadow: 0 4px 30px rgba(0, 0, 0, 0.522);
+
+                                & h2 {
+                                    color: #dad7cdc8;
+                                    letter-spacing: 2px;
+                                }
+                            }
+                        }
+                    }
+
+
+                    & .boton-derecha {
+                        position: absolute;
+                        top: 50%;
+                        right: 12px;
+                        transform: translateY(-50%);
+
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        /* From https://css.glass */
+                        background: rgba(255, 255, 255, 0.08);
+                        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                        backdrop-filter: blur(3px);
+                        -webkit-backdrop-filter: blur(3px);
+                        border: 1px solid rgba(255, 255, 255, 0.06);
+                        text-decoration: none;
+                        z-index: 10;
+                    }
+                }
+
             }
 
         }

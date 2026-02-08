@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cv definitivo</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <div class="topbar">
         <nav class="menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#educacion">Educación</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#software">Software</a>
-        <a href="#contacto">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#educacion">Educación</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#software">Tech Stack</a>
+            <!-- <a href="#contacto">Contacto</a> -->
         </nav>
     </div>
 
@@ -56,11 +58,7 @@
                         <img width="24px" src="./imagenes/icons8-teléfono-50.png" alt="">
                     </a>
 
-                    <a
-                        href="https://www.linkedin.com/in/marina-fernández-martín"
-                        target="_blank"
-                        aria-label="LinkedIn"
-                    >
+                    <a href="https://www.linkedin.com/in/marina-fernández-martín" target="_blank" aria-label="LinkedIn">
                         <img width="24px" src="./imagenes/icons8-linkedin-50.png" alt="">
                     </a>
                 </div>
@@ -69,7 +67,7 @@
                 <div class="descarga-cv">
                     <a href="./CV_Marina_Fernandez.pdf" download>Descargar CV</a>
                 </div>
-                
+
             </div>
         </div>
         <div class="main" id="main">
@@ -132,7 +130,8 @@
                 </div>
                 <div class="contenido-educacion">
                     <div>
-                        <img width="100px" height="50px" src="./imagenes/2026-02-07_18h31_56-removebg-preview.png" alt="">
+                        <img width="100px" height="50px" src="./imagenes/2026-02-07_18h31_56-removebg-preview.png"
+                            alt="">
                     </div>
                     <div class="contenido-educacion-ppal">
                         <h2>Curso online QGIS inicial - intermedio</h2>
@@ -158,7 +157,7 @@
 
             <!-- experiencia -->
             <div class="section" id="experiencia">
-                <div class="contenido-experiencia">
+                <div class="contenido-experiencia" id="canarias">
                     <h2>Técnico adjunto de validación de datos</h2>
                     <h3>Red de Control y Vigilancia de la Calidad del Aire de Canarias</h3>
                     <p>Nov. 2024 - Ag. 2025</p>
@@ -170,7 +169,7 @@
                         <li>Generación de informes y comunicación de resultados.</li>
                     </ul>
                 </div>
-                <div class="contenido-experiencia">
+                <div class="contenido-experiencia" id="bruselas">
                     <h2>Internship Trainee</h2>
                     <h3>European Parliament</h3>
                     <p>Abr. 2023 - Ag. 2023</p>
@@ -181,7 +180,7 @@
                         <li>Inglés</li>
                     </ul>
                 </div>
-                <div class="contenido-experiencia">
+                <div class="contenido-experiencia" id="oob">
                     <h2>Ride Operator</h2>
                     <h3>Palace Playland Associates LLC</h3>
                     <p>Jun. 2022 - Sep. 2022</p>
@@ -193,11 +192,66 @@
                     </ul>
                 </div>
             </div>
-            <div class="section" id="software">SOFTWARE</div>
-            <div class="section" id="contacto">CONTACTO</div>
+            <!-- stack -->
+            <div class="section" id="software">
+                <div class="stack-carrusel">
+                    <!-- botones -->
+                    <a class="boton-izquierda" href="#esri">
+                        <img width="20px" height="20px" src="./imagenes/angulo-izquierdo.png" alt="">
+                    </a>
+
+                    <div class="viewport">
+                        <!-- lo que se desplaza -->
+                        <div class="track">
+                            <div class="card" id="esri">
+                                <h2>GIS - Esri</h2>
+                                <ul>
+                                    <li>ArcGIS Pro</li>
+                                    <li>ArcGIS Online</li>
+                                    <li>ArcGIS Enterprise</li>
+                                    <li>Creación de apps (esri)</li>
+                                    <li>Apps de campo</li>
+                                </ul>
+                            </div>
+                            <div class="card" id="datos">
+                                <h2>Datos</h2>
+                                <ul>
+                                    <li>Gestión de datos espaciales</li>
+                                    <li>Automatización de flujos GIS</li>
+                                    <li>Publicación de servicios y apps</li>
+                                </ul>
+                            </div>
+                            <div class="card" id="desarrollo">
+                                <h2>Desarrollo / Automatización</h2>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>ArcPy</li>
+                                    <li>ArcGIS API for Python</li>
+                                </ul>
+                            </div>
+                            <div class="card" id="web">
+                                <h2>Web</h2>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="boton-derecha" href="#web">
+                        <img width="20px" height="20px" src="./imagenes/angulo-derecho.png" alt="">
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- <div class="section" id="contacto">CONTACTO</div> -->
         </div>
 
     </div>
-    
+
 </body>
+
 </html>
