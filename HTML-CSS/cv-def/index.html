@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cv definitivo</title>
     <link rel="stylesheet" href="style.css">
+    <script src="botonesCarrusel.js" defer></script>
 </head>
 
 <body>
-
+    <!-- TOPBAR -->
     <div class="topbar">
         <nav class="menu">
             <a href="#inicio">Inicio</a>
@@ -21,7 +22,7 @@
     </div>
 
     <div class="layout">
-
+        <!-- SIDEBAR -->
         <div class="sidebar">
             <div class="sidebar-box">
                 <!-- Nombre -->
@@ -32,7 +33,7 @@
 
                 <!-- Imagen perfil -->
                 <div class="imagen-perfil">
-                    <img id="perfil" width="250px" src="./imagenes/IMG_6459.jpg" alt="Imagen de perfil">
+                    <img id="perfil" width="200px" src="./imagenes/foto_cv.jpg" alt="Imagen de perfil">
                 </div>
 
                 <!-- Descripción -->
@@ -65,11 +66,12 @@
 
                 <!-- Descargar CV -->
                 <div class="descarga-cv">
-                    <a href="./CV_Marina_Fernandez.pdf" download>Descargar CV</a>
+                    <a href="./imagenes/FERNANDEZ MARTIN Marina - CV.pdf" download>Descargar CV</a>
                 </div>
 
             </div>
         </div>
+        <!--PRINCIPAL -->
         <div class="main" id="main">
             <!-- inicio -->
             <div class="section" id="inicio">
@@ -164,7 +166,6 @@
                     <p>Madrid, España</p>
                     <ul>
                         <li>Análisis de datos ambientales.</li>
-                        <li>Manejo de herramientas de software para la gestión de datos.</li>
                         <li>Conocimiento de normativas ambientales y procedimientos de calidad.</li>
                         <li>Generación de informes y comunicación de resultados.</li>
                     </ul>
@@ -192,14 +193,14 @@
                     </ul>
                 </div>
             </div>
+
             <!-- stack -->
             <div class="section" id="software">
                 <div class="stack-carrusel">
                     <!-- botones -->
-                    <a class="boton-izquierda" href="#esri">
+                    <a class="boton-izquierda" id="btn-izq">
                         <img width="20px" height="20px" src="./imagenes/angulo-izquierdo.png" alt="">
                     </a>
-
                     <div class="viewport">
                         <!-- lo que se desplaza -->
                         <div class="track">
@@ -240,7 +241,7 @@
                         </div>
                     </div>
 
-                    <a class="boton-derecha" href="#web">
+                    <a class="boton-derecha" id="btn-dcha">
                         <img width="20px" height="20px" src="./imagenes/angulo-derecho.png" alt="">
                     </a>
 
