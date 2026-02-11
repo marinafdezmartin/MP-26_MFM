@@ -18,6 +18,8 @@
 }
 
 /* Para que el menu superior redirija a cada id */
+/* body:has(#educacion:target) -> selecciona el body si dentro hay un elemento con id educacion que esté en estado :target -> Si ahora mismo estoy en #educacion */
+/* ___.menu a[href] -> selecciona el enlace del menú que tiene href="#inicio"  */
 body:has(#inicio:target) .menu a[href="#inicio"],
 body:has(#educacion:target) .menu a[href="#educacion"],
 body:has(#experiencia:target) .menu a[href="#experiencia"],
@@ -34,8 +36,6 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
 }
 
 /* Para que cuando scrolleo se señalice en el menu superior */
-
-
 
 
 & body {
@@ -92,8 +92,6 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
             -webkit-backdrop-filter: blur(3px);
             border: 1px solid rgba(255, 255, 255, 0.06);
         }
-
-
     }
 
     & .layout {
@@ -148,6 +146,12 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
 
                     & img {
                         border-radius: 16px;
+                        transition: transform 0.5s ease;
+                    }
+
+                    & img:hover {
+                        transform: scale(1.1);
+                        transition: transform 0.5s ease;
                     }
                 }
 
@@ -234,6 +238,7 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
                         backdrop-filter: blur(2.5px);
                         -webkit-backdrop-filter: blur(2.5px);
                         border: 1px solid rgba(255, 255, 255, 0.3);
+                        
                     }
 
                     & a:hover {
@@ -269,7 +274,6 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
             scrollbar-color: #839e78 #344e41;
 
             background: none;
-
 
             & .section {
                 scroll-snap-align: start;
@@ -352,6 +356,7 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
                     -webkit-backdrop-filter: blur(1.9px);
                     border: 1px solid rgba(255, 255, 255, 0.3);
 
+                    transition: transform 0.3s ease-in-out;
 
                     & .contenido-educacion-ppal {
                         flex: 1;
@@ -400,6 +405,12 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
 
                 }
 
+                & .contenido-educacion:hover {
+                    transform: translate(-5px, -5px);
+                    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+                    transition: transform 0.3s ease-in-out;
+                }
+
             }
 
             & #experiencia {
@@ -428,6 +439,8 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
                     backdrop-filter: blur(1.9px);
                     -webkit-backdrop-filter: blur(1.9px);
                     border: 1px solid rgba(255, 255, 255, 0.3);
+
+                    transition: transform 0.3s ease-in-out;
 
                     & h2,
                     h3 {
@@ -463,6 +476,12 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
                     & ul {
                         text-align: justify;
                     }
+                }
+
+                & .contenido-experiencia:hover {
+                    transform: translate(0px, -10px);
+                    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+                    transition: transform 0.3s ease-in-out;
                 }
             }
 
@@ -584,9 +603,7 @@ body:has(#contacto:target) .menu a[href="#contacto"] {
                         cursor: pointer;
                     }
                 }
-
             }
-
         }
     }
 }
