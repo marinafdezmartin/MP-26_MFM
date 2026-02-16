@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Load Calcite Design System -->
+    <script type="module" src="https://js.arcgis.com/calcite-components/3.3.3/calcite.esm.js"></script>
+
+    <!-- Load the JavaScript Maps SDK core API -->
+    <script src="https://js.arcgis.com/4.34/"></script>
+
+    <!-- Load the JavaScript Maps SDK Map components or other component packages -->
+    <script type="module" src="https://js.arcgis.com/4.34/map-components/"></script>
+
+    <script type="module" src="main.js" defer></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <arcgis-map item-id="67672f754f654b1b8965734404ff599f">
+        <div class="capas">
+            <!-- <button id="capa1">Centros de atención primaria</button>
+            <button id="capa2">Zonas básicas de salud</button> -->
+        </div>
+    </arcgis-map>
+</body>
+
+</html>
