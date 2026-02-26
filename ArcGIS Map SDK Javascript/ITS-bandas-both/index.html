@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOTH</title>
+    <!-- Load the ArcGIS Maps SDK for JavaScript from CDN -->
+    <script type="module" src="https://js.arcgis.com/5.0/"></script>
+    <script type="module" src="main.js" defer></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <arcgis-map basemap='dark-gray' center='-16.499210, 28.302968' zoom="10">
+        <!-- <calcite-button id="btn-natural">Color natural</calcite-button>
+        <calcite-button id="btn-geo">Geología</calcite-button> -->
+        <calcite-button></calcite-button>
+        <arcgis-swipe id="swipe" position="15" direction="horizontal"></arcgis-swipe>
+    </arcgis-map>
+</body>
+
+</html>
