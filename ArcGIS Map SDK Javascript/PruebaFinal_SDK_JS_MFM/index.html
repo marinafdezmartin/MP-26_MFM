@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="eS">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PruebaFinal_SDK_JS_MFM</title>
+    <!-- Load the ArcGIS Maps SDK for JavaScript from CDN -->
+    <script type="module" src="https://js.arcgis.com/5.0/"></script>
+    <script type="module" src="main.js" defer></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body class="calcite-mode-dark">
+    <calcite-shell>
+
+        <calcite-navigation slot="header">
+            <calcite-navigation-logo slot="logo" heading="Comercios" description="Comunidad de Madrid">
+            </calcite-navigation-logo>
+        </calcite-navigation>
+
+        <arcgis-map basemap="dark-gray" center='-3.689490, 40.424354' zoom='11'>
+            <arcgis-legend slot="bottom-right" legend-style="classic"></arcgis-legend>
+            <arcgis-popup slot="popup"></arcgis-popup>
+            <arcgis-expand slot="bottom-left" icon-number="0" mode="floating" collapse-icon="layers" expand-icon="layers">
+                <arcgis-layer-list></arcgis-layer-list>
+            </arcgis-expand>
+            <arcgis-scale-bar slot="bottom-left" bar-style="line" unit="metric"></arcgis-scale-bar>
+        </arcgis-map>
+    </calcite-shell>
+
+</body>
+
+</html>

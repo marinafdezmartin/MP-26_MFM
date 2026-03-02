@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="eS">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PruebaFinal_SDK_JS_MFM</title>
+    <!-- Load the ArcGIS Maps SDK for JavaScript from CDN -->
+    <script type="module" src="https://js.arcgis.com/5.0/"></script>
+    <script type="module" src="main.js" defer></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body class="calcite-mode-dark">
+    <arcgis-map basemap="dark-gray" center='-3.689490, 40.424354' zoom='12'>
+        <arcgis-legend slot="bottom-right" legend-style="classic"></arcgis-legend>
+        <arcgis-popup slot="popup"></arcgis-popup>
+        <arcgis-layer-list slot="bottom-left"></arcgis-layer-list>
+        <arcgis-expand slot="top-right" icon-number="0" mode="floating" visual-scale="m" collapse-icon="pencil"
+            expand-icon="pencil" expand-tooltip collapse-tooltip group>
+            <arcgis-sketch creation-mode="continuous" layout="horizontal" hide-create-tools-circle
+                hide-create-tools-multipoint hide-create-tools-polygon hide-create-tools-polyline
+                hide-create-tools-rectangle hide-selection-tools-lasso-selection
+                hide-selection-tools-rectangle-selection hide-settings-menu></arcgis-sketch>
+        </arcgis-expand>
+    </arcgis-map>
+</body>
+
+</html>
