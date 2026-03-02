@@ -8,6 +8,7 @@
     <!-- Load the ArcGIS Maps SDK for JavaScript from CDN -->
     <script type="module" src="https://js.arcgis.com/5.0/"></script>
     <script type="module" src="main.js" defer></script>
+    
     <style>
         html,
         body {
@@ -18,9 +19,23 @@
 </head>
 
 <body>
-    <arcgis-map basemap="topo-vector" center='-3.632130, 40.546347' zoom='9'>
-        <arcgis-legend slot="bottom-right" legend-style="classic"></arcgis-legend>
-    </arcgis-map>
+    <calcite-shell>
+        <calcite-navigation slot="header">
+            <calcite-navigation-logo slot="logo" heading="Servicios sanitarios" description="Comunidad de Madrid">
+            </calcite-navigation-logo>
+            <calcite-menu slot="content-end" label="Map Menu">
+                <calcite-menu-item id="hospitales" text="Hospitales" icon-start="activity-monitor"></calcite-menu-item>
+                <calcite-menu-item active text="Farmacias" icon-start="medical"></calcite-menu-item>
+                <calcite-menu-item text="Forecast" icon-start="snow"></calcite-menu-item>
+            </calcite-menu>
+        </calcite-navigation>
+        <arcgis-map basemap="dark-gray" center='-3.632130, 40.546347' zoom='9'>
+            <arcgis-legend slot="bottom-right" legend-style="classic"></arcgis-legend>
+            <arcgis-popup slot="popup"></arcgis-popup>
+        </arcgis-map>
+    </calcite-shell>
+        
+
 </body>
 
 </html>
