@@ -1,0 +1,32 @@
+.aplicacion-arcgis {
+    background-color: #93559f;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 16px;
+    margin: 10px;
+
+    & img {
+        width: 120px;
+        height: 120px;
+        border-radius: 16px;
+        transition: 0.5s;
+    }
+
+    & img:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    & div {
+        width: 80%;
+        margin: 10px;
+
+        & a {
+            text-decoration: none;
+            color: rgb(228, 235, 181);
+        }
+    }
+}
