@@ -1,12 +1,14 @@
 .aplicacion-arcgis {
-    background-color: #93559f;
+    background-color: #a3a380;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    color: aliceblue;
+    color: #f0f8ff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 16px;
     margin: 10px;
+    padding-left: 40px;
 
     & img {
         width: 120px;
@@ -20,13 +22,56 @@
         transition: 0.5s;
     }
 
-    & div {
+    & .descripcion-app {
+        display: flex;
+        flex-direction: column;
         width: 80%;
         margin: 10px;
+
+        & p {
+            margin: 5px;
+            margin-left: 0px;
+        }
 
         & a {
             text-decoration: none;
             color: rgb(228, 235, 181);
+            margin: 5px;
+            margin-left: 0px;
         }
+
+        & button {
+            width: 110px;
+            margin: 5px;
+            margin-left: 0px;
+            padding: 5px;
+            padding-left: 15px;
+            text-align: start ;
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.27);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        & button:hover {
+            /* From https://css.glass */
+            background: rgba(255, 255, 255, 0.61);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
     }
+
+}
+
+.card-app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
